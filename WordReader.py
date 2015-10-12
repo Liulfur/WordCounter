@@ -11,8 +11,7 @@ with open(file_name, "r") as my_input, open("basic_file.txt", "w") as my_output:
     no_punctuation = my_input.read().translate(remove_punctuation)
     my_output.write(no_punctuation)
 #Take the recently made file as the new input
-new_file_name = os.path.join("C:/Users/SFU/PycharmProjects/Word_Reader", "basic_file.txt")
-with open(new_file_name, "r") as new_input:
+with open("basic_file.txt", "r") as new_input:
     reader = new_input.read()
     words = reader.split()
 #Count the most used words using the Counter import
